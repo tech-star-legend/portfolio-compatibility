@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Com SR Infotech — Engineering Digital Excellence</title>
+<meta name="description" content="Com SR Infotech designs and builds professional websites, custom software, and business automation for startups, educational institutions, and growing businesses.">
+<meta name="keywords" content="Com SR Infotech, website development, custom software development, business automation, database solutions, UI UX design, software company India">
+<meta name="author" content="Com SR Infotech">
+<link rel="canonical" href="https://www.comsrinfotech.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Com SR Infotech — Engineering Digital Excellence">
+<meta property="og:description" content="We design and build professional websites, custom software, and business automation for startups, educational institutions, and growing businesses.">
+<meta property="og:url" content="https://www.comsrinfotech.com/">
+<meta property="og:image" content="https://www.comsrinfotech.com/assets/logo-dark-256.png">
+<meta property="og:site_name" content="Com SR Infotech">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Com SR Infotech — Engineering Digital Excellence">
+<meta name="twitter:description" content="Websites, custom software and business automation for startups, institutions and businesses.">
+<meta name="twitter:image" content="https://www.comsrinfotech.com/assets/logo-dark-256.png">
+
+<link rel="icon" type="image/png" href="assets/logo-dark-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Com SR Infotech",
+  "description": "Software development company providing website development, custom software, business automation, database solutions, deployment support and UI/UX design.",
+  "url": "https://www.comsrinfotech.com/",
+  "logo": "https://www.comsrinfotech.com/assets/logo-dark-256.png",
+  "areaServed": "IN",
+  "sameAs": []
+}
+</script>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-mark">
+    <svg viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="24" stroke="#262626" stroke-width="4"/><path d="M30 6a24 24 0 0 1 24 24" stroke="#E10600" stroke-width="4" stroke-linecap="round"/></svg>
+  </div>
+</div>
+
+<div id="progressBar"></div>
+<div id="cursorGlow" aria-hidden="true"></div>
+
+<!-- WAVE TRANSITION OVERLAY -->
+<div class="theme-wave" id="waveOverlay" aria-hidden="true">
+  <svg viewBox="0 0 1440 90" preserveAspectRatio="none" class="top"><path d="M0,45 C180,90 360,0 540,45 C720,90 900,0 1080,45 C1260,90 1350,20 1440,45 L1440,90 L0,90 Z" fill="var(--wave-color)"/></svg>
+  <div class="fill" style="background:var(--wave-color)"></div>
+  <svg viewBox="0 0 1440 90" preserveAspectRatio="none" class="bottom"><path d="M0,45 C180,90 360,0 540,45 C720,90 900,0 1080,45 C1260,90 1350,20 1440,45 L1440,90 L0,90 Z" fill="var(--wave-color)"/></svg>
+</div>
+
+<!-- HEADER -->
+<header id="siteHeader">
+  <div class="container">
+    <nav aria-label="Primary">
+      <a href="#home" class="brand">
+        <img class="brand-logo" data-logo="dark" src="assets/logo-dark-256.png" alt="Com SR Infotech">
+        <img class="brand-logo" data-logo="light" src="assets/logo-light-256.png" alt="Com SR Infotech" style="display:none;">
+        <span class="brand-text">Com SR Infotech<span>ENGINEERING DIGITAL EXCELLENCE</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#technologies">Technologies</a>
+        <a href="#projects">Projects</a>
+        <a href="#industries">Industries</a>
+        <a href="#company">Company</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme">
+          <span class="knob" id="themeKnob">🌙</span>
+        </button>
+        <a href="#contact" class="btn btn-primary">Get Started</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#solutions">Solutions</a>
+  <a href="#technologies">Technologies</a>
+  <a href="#projects">Projects</a>
+  <a href="#industries">Industries</a>
+  <a href="#company">Company</a>
+  <a href="#contact" class="btn btn-primary btn-block">Get Started</a>
+</nav>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-bg" aria-hidden="true"><canvas id="heroCanvas"></canvas></div>
+    <div class="container hero-inner">
+      <div class="eyebrow reveal" style="justify-content:center;">Website · Software · Automation · Support</div>
+      <h1 class="reveal">Engineering the Future of<br><span class="accent">Digital Innovation</span></h1>
+      <p class="lead reveal">Com SR Infotech designs and builds modern websites, custom business software, and digital solutions that help startups, institutions, and businesses run smoother and grow faster.</p>
+      <div class="hero-actions reveal">
+        <a href="#contact" class="btn btn-primary">Start Your Project</a>
+        <a href="#solutions" class="btn btn-outline">Explore Solutions</a>
+      </div>
+
+      <div class="hero-stats reveal-stagger">
+        <div class="hero-stat"><strong data-count="25" data-suffix="+">0</strong><span>Projects Completed</span></div>
+        <div class="hero-stat"><strong data-count="20" data-suffix="+">0</strong><span>Happy Clients</span></div>
+        <div class="hero-stat"><strong data-count="24" data-suffix="/7">0</strong><span>Business Support</span></div>
+        <div class="hero-stat"><strong data-count="100" data-suffix="%">0</strong><span>Project Commitment</span></div>
+      </div>
+
+      <div class="trust-row reveal-stagger">
+        <div class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Business Focused</div>
+        <div class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 18h6"/></svg>Responsive Solutions</div>
+        <div class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Reliable Support</div>
+        <div class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 2.6 6.6L21 9l-5 4.4L17.5 21 12 17l-5.5 4 1.5-7.6L3 9l6.4-.4z"/></svg>Premium Quality</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">&lt;/ about us&gt;</span>
+        <h2>A software team built<br>around your business.</h2>
+      </div>
+
+      <div class="about-top">
+        <div class="about-copy reveal">
+          <p><strong style="color:var(--text)">Who we are.</strong> Com SR Infotech is a software development company that partners with small businesses, startups, and institutions to design, build, and maintain the digital systems they rely on every day — from customer-facing websites to the internal software that keeps operations running.</p>
+          <p><strong style="color:var(--text)">Our story.</strong> Com SR Infotech was started with a simple observation: most small and mid-sized organizations are underserved by software vendors who either overcharge for generic templates or overpromise on enterprise-scale solutions they don't need. We started this company to sit in between — genuinely custom work, built by developers who take the time to understand the business first.</p>
+          <p><strong style="color:var(--text)">Looking ahead.</strong> As we grow, our goal stays the same: fewer clients, better work, longer relationships. We'd rather be the team a business calls for the next ten years than a vendor used once.</p>
+        </div>
+
+        <div class="mv-grid reveal">
+          <div class="mv-card">
+            <span class="tag">Our Mission</span>
+            <h3>Practical software, honestly delivered</h3>
+            <p>To give businesses of every size access to well-engineered digital tools — websites, software, and automation — without the inflated cost or complexity of enterprise consulting.</p>
+          </div>
+          <div class="mv-card">
+            <span class="tag">Our Vision</span>
+            <h3>The dependable tech partner</h3>
+            <p>To become the long-term technology partner that small businesses, schools, and startups in our region trust for every stage of their digital growth.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-head reveal" style="margin-bottom:36px;">
+        <span class="eyebrow">&lt;/ core values&gt;</span>
+        <h2 style="font-size:clamp(24px,3.4vw,32px);">What guides how we build.</h2>
+      </div>
+      <div class="values-grid reveal-stagger" style="margin-bottom:70px;">
+        <div class="value-card"><span class="num">01</span><h4>Clarity First</h4><p>We explain what we're building and why, in plain language — no jargon, no guesswork.</p></div>
+        <div class="value-card"><span class="num">02</span><h4>Built to Last</h4><p>Clean, maintainable code so your system doesn't become someone else's problem in a year.</p></div>
+        <div class="value-card"><span class="num">03</span><h4>Honest Scope</h4><p>We tell you what's realistic for your budget and timeline — not what sounds impressive.</p></div>
+        <div class="value-card"><span class="num">04</span><h4>Long-Term Support</h4><p>We stay reachable after launch. A project ending doesn't mean the relationship does.</p></div>
+      </div>
+
+      <div class="founder-block reveal">
+        <div class="hero-logo-wrap" style="margin:0;">
+          <img src="assets/logo-dark-256.png" data-logo="dark" alt="Com SR Infotech" style="width:84px;height:84px;animation:none;box-shadow:none;">
+          <img src="assets/logo-light-256.png" data-logo="light" alt="Com SR Infotech" style="width:84px;height:84px;animation:none;box-shadow:none;display:none;">
+        </div>
+        <div>
+          <p class="founder-quote">"We built Com SR Infotech because too many good businesses were being sold software that didn't fit them. Our job isn't to impress you with buzzwords — it's to build something that works, that you understand, and that grows with you."</p>
+          <div class="founder-name">The Founding Team</div>
+          <div class="founder-role">Com SR Infotech</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOLUTIONS ============ -->
+  <section class="solutions" id="solutions">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">&lt;/ solutions&gt;</span>
+        <h2>Software services we confidently deliver.</h2>
+        <p>Every solution below reflects work we actually do — no overreach, no outsourced guesswork.</p>
+      </div>
+
+      <div class="solutions-grid reveal-stagger">
+
+        <div class="solution-card">
+          <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#E10600" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9s1.3-6.5 3.8-9z"/></svg></div>
+          <h3>Website Development</h3>
+          <p>Professional, fast-loading websites that represent your business the way it deserves to be seen.</p>
+          <ul>
+            <li>Responsive & corporate websites</li>
+            <li>Landing pages & portfolios</li>
+            <li>Website redesign & modernization</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-sm">Learn More</a>
+        </div>
+
+        <div class="solution-card">
+          <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#E10600" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m8 10 3 3-3 3M14 16h3"/></svg></div>
+          <h3>Custom Software Development</h3>
+          <p>Purpose-built systems designed around how your business actually operates.</p>
+          <ul>
+            <li>Management & billing systems</li>
+            <li>Inventory & attendance software</li>
+            <li>Desktop & internal business tools</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-sm">Learn More</a>
+        </div>
+
+        <div class="solution-card">
+          <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#E10600" stroke-width="1.8"><path d="M12 3v6M12 15v6M4.2 7.8l5.2 3M14.6 13.2l5.2 3M4.2 16.2l5.2-3M14.6 10.8l5.2-3"/></svg></div>
+          <h3>Business Automation</h3>
+          <p>We turn repetitive manual tasks into automated, reliable workflows.</p>
+          <ul>
+            <li>Invoice & report generation</li>
+            <li>Excel & document automation</li>
+            <li>Workflow & task automation</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-sm">Learn More</a>
+        </div>
+
+        <div class="solution-card">
+          <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#E10600" stroke-width="1.8"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div>
+          <h3>Database Solutions</h3>
+          <p>Well-structured data is the foundation every reliable system is built on.</p>
+          <ul>
+            <li>Database design & modeling</li>
+            <li>MySQL integration</li>
+            <li>MongoDB integration</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-sm">Learn More</a>
+        </div>
+
+        <div class="solution-card">
+          <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#E10600" stroke-width="1.8"><path d="M6 18a4 4 0 0 1 0-8 6 6 0 0 1 11.3-2A4.5 4.5 0 0 1 18 18H6z"/></svg></div>
+          <h3>Deployment & Hosting Support</h3>
+          <p>We handle the technical side of getting your website or software live and staying that way.</p>
+          <ul>
+            <li>Deployment & domain connection</li>
+            <li>SSL setup & website migration</li>
+            <li>Hosting assistance</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-sm">Learn More</a>
+        </div>
+
+        <div class="solution-card">
+          <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#E10600" stroke-width="1.8"><path d="M12 20a8 8 0 1 0-8-8c0 2 .6 3.4 2 5l1 3 3-1c1.2.6 2.6 1 4 1z"/><path d="M9 12h.01M12 12h.01M15 12h.01"/></svg></div>
+          <h3>Website Maintenance</h3>
+          <p>Ongoing care that keeps your site fast, current, and free of nasty surprises.</p>
+          <ul>
+            <li>Content updates & bug fixing</li>
+            <li>Performance optimization</li>
+            <li>Regular backups & support</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-sm">Learn More</a>
+        </div>
+
+        <div class="solution-card" style="grid-column:1/-1;max-width:none;">
+          <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#E10600" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+          <h3>UI / UX Design</h3>
+          <p>Interfaces people can actually use — designed for clarity first, decoration second.</p>
+          <ul style="display:flex;flex-wrap:wrap;gap:8px 24px;">
+            <li>Responsive interfaces</li>
+            <li>Dashboard design</li>
+            <li>Modern, user-friendly layouts</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-sm">Learn More</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE US (Company) ============ -->
+  <section class="why" id="company">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">&lt;/ why choose us&gt;</span>
+        <h2>What makes working with us different.</h2>
+      </div>
+      <div class="why-grid reveal-stagger">
+        <div class="why-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM12 14c-4.4 0-8 2-8 4.5V20h16v-1.5c0-2.5-3.6-4.5-8-4.5z"/></svg><h4>Professional Developers</h4><p>A focused team that writes clean, considered code — not a rotating cast of freelancers.</p></div>
+        <div class="why-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg><h4>Business Focused Solutions</h4><p>We start with your workflow and goals, not a template we're trying to reuse.</p></div>
+        <div class="why-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><h4>Responsive Design</h4><p>Every build is tested across phones, tablets, and desktops before it ships.</p></div>
+        <div class="why-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg><h4>Affordable Pricing</h4><p>Transparent quotes sized for small business budgets, not enterprise retainers.</p></div>
+        <div class="why-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><h4>Reliable Support</h4><p>When something breaks, you can reach us — support doesn't stop at launch day.</p></div>
+        <div class="why-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m14 4-2 3M10 20l2-3M4 12h3M17 12h3M7 7l2 2M17 17l-2-2M7 17l2-2M17 7l-2 2"/></svg><h4>Modern Technologies</h4><p>We build with current, well-supported tools rather than outdated stacks.</p></div>
+        <div class="why-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m18 16 4-4-4-4M6 8l-4 4 4 4M14 4l-4 16"/></svg><h4>Clean Code</h4><p>Readable, documented code that the next developer can actually maintain.</p></div>
+        <div class="why-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 1 1-3-6.7M21 3v6h-6"/></svg><h4>Continuous Improvement</h4><p>We revisit and refine delivered systems as your business needs evolve.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">&lt;/ our process&gt;</span>
+        <h2>How a project moves from idea to launch.</h2>
+      </div>
+      <div class="timeline reveal-stagger">
+        <div class="tl-step"><div class="tl-dot">01</div><h4>Requirement Analysis</h4><p>We start by understanding your business, your users, and what "done" actually looks like for you.</p></div>
+        <div class="tl-step"><div class="tl-dot">02</div><h4>Research</h4><p>We look at your industry, competitors, and constraints before proposing a direction.</p></div>
+        <div class="tl-step"><div class="tl-dot">03</div><h4>Planning</h4><p>Scope, timeline, and technology choices are laid out clearly before any code is written.</p></div>
+        <div class="tl-step"><div class="tl-dot">04</div><h4>UI Design</h4><p>Wireframes and visual design so you can see and approve the experience early.</p></div>
+        <div class="tl-step"><div class="tl-dot">05</div><h4>Development</h4><p>Clean, incremental builds with regular check-ins — no disappearing for weeks at a time.</p></div>
+        <div class="tl-step"><div class="tl-dot">06</div><h4>Testing</h4><p>Cross-device, cross-browser testing to catch issues before your users do.</p></div>
+        <div class="tl-step"><div class="tl-dot">07</div><h4>Deployment</h4><p>Your website or software goes live, with domain, hosting, and SSL handled properly.</p></div>
+        <div class="tl-step"><div class="tl-dot">08</div><h4>Support</h4><p>We stay on for updates, fixes, and the inevitable "one more thing" requests.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TECHNOLOGIES ============ -->
+  <section class="tech" id="technologies">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">&lt;/ technologies&gt;</span>
+        <h2>The stack behind our work.</h2>
+        <p>Tools we genuinely use in production — not a buzzword list.</p>
+      </div>
+      <div class="tech-grid reveal-stagger">
+        <div class="tech-card"><div class="icon"><svg viewBox="0 0 24 24"><path fill="#E44D26" d="M4 3h16l-1.5 17L12 22l-6.5-2z"/><path fill="#fff" d="M12 6H7l.3 3.5H12v3H8.6l.3 3.2 3.1.9v-2.3l-1.9-.5-.1-1.3H12V6z" opacity=".9"/></svg></div><strong>HTML5</strong><span>Semantic markup</span></div>
+        <div class="tech-card"><div class="icon"><svg viewBox="0 0 24 24"><path fill="#1572B6" d="M4 3h16l-1.5 17L12 22l-6.5-2z"/><path fill="#fff" d="M12 6.2H7.3l.2 2.3H12v2.3H9l.2 2.3H12v2.3l-2.5-.7-.2-1.7H7l.3 3.6 4.7 1.3z" opacity=".9"/></svg></div><strong>CSS3</strong><span>Modern styling</span></div>
+        <div class="tech-card"><div class="icon"><svg viewBox="0 0 24 24"><rect width="24" height="24" fill="#F7DF1E" rx="3"/><text x="12" y="16.5" font-family="Space Grotesk, sans-serif" font-size="9" font-weight="700" text-anchor="middle" fill="#111">JS</text></svg></div><strong>JavaScript</strong><span>Interactive logic</span></div>
+        <div class="tech-card"><div class="icon"><svg viewBox="0 0 24 24"><rect width="24" height="24" fill="#f0f0f0" rx="3"/><text x="12" y="16" font-family="Space Grotesk, sans-serif" font-size="8" font-weight="700" text-anchor="middle" fill="#E10600">JAVA</text></svg></div><strong>Java</strong><span>Application logic</span></div>
+        <div class="tech-card"><div class="icon"><svg viewBox="0 0 24 24"><rect width="24" height="24" fill="#306998" rx="3"/><text x="12" y="15.5" font-family="Space Grotesk, sans-serif" font-size="7.5" font-weight="700" text-anchor="middle" fill="#FFD43B">PY</text></svg></div><strong>Python</strong><span>Backend & scripting</span></div>
+        <div class="tech-card"><div class="icon"><svg viewBox="0 0 24 24"><rect width="24" height="24" fill="#111" rx="3"/><text x="12" y="16" font-family="Space Grotesk, sans-serif" font-size="7.5" font-weight="700" text-anchor="middle" fill="#fff">FLSK</text></svg></div><strong>Flask</strong><span>Lightweight APIs</span></div>
+        <div class="tech-card"><div class="icon"><svg viewBox="0 0 24 24"><rect width="24" height="24" fill="#00758F" rx="3"/><text x="12" y="16" font-family="Space Grotesk, sans-serif" font-size="7" font-weight="700" text-anchor="middle" fill="#fff">SQL</text></svg></div><strong>MySQL</strong><span>Relational data</span></div>
+        <div class="tech-card"><div class="icon"><svg viewBox="0 0 24 24"><rect width="24" height="24" fill="#13AA52" rx="3"/><path fill="#fff" d="M12 4c2 3 3.5 6 3.5 9a3.5 3.5 0 0 1-7 0c0-3 1.5-6 3.5-9z"/></svg></div><strong>MongoDB</strong><span>Document storage</span></div>
+        <div class="tech-card"><div class="icon"><svg viewBox="0 0 24 24"><rect width="24" height="24" fill="#F05032" rx="3"/><circle cx="12" cy="12" r="2.4" fill="#fff"/><path d="M12 4v3.5M12 16.5V20" stroke="#fff" stroke-width="1.6"/></svg></div><strong>Git</strong><span>Version control</span></div>
+        <div class="tech-card"><div class="icon"><svg viewBox="0 0 24 24"><rect width="24" height="24" fill="#111" rx="3"/><path fill="#fff" d="M12 5a6.5 6.5 0 0 0-2 12.7c.3 0 .4-.1.4-.3v-1.2c-1.8.4-2.2-.8-2.2-.8-.3-.7-.7-.9-.7-.9-.6-.4 0-.4 0-.4.7 0 1 .7 1 .7.6 1 1.6.7 2 .5.1-.4.2-.7.4-.9-1.5-.2-3-.7-3-3.2 0-.7.2-1.3.7-1.7-.1-.2-.3-.8.1-1.7 0 0 .6-.2 1.9.7a6.6 6.6 0 0 1 3.4 0c1.3-.9 1.9-.7 1.9-.7.4.9.2 1.5.1 1.7.4.4.7 1 .7 1.7 0 2.5-1.5 3-3 3.2.2.2.4.6.4 1.2v1.8c0 .2.1.3.4.3A6.5 6.5 0 0 0 12 5z"/></svg></div><strong>GitHub</strong><span>Code hosting</span></div>
+        <div class="tech-card"><div class="icon"><svg viewBox="0 0 24 24"><rect width="24" height="24" fill="#111" rx="3"/><path fill="#5CE1B4" d="m12 5 6 11H6z" opacity=".9"/></svg></div><strong>Render</strong><span>App deployment</span></div>
+        <div class="tech-card"><div class="icon"><svg viewBox="0 0 24 24"><rect width="24" height="24" fill="#111" rx="3"/><path fill="#fff" d="m12 6 7 12H5z"/></svg></div><strong>Vercel</strong><span>Frontend hosting</span></div>
+        <div class="tech-card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#E10600" stroke-width="1.8"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><strong>Responsive Design</strong><span>Every screen size</span></div>
+        <div class="tech-card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#E10600" stroke-width="1.8"><path d="M4 20 15 9l5 5L9 25z" transform="translate(0,-5)"/><path d="m14 6 4 4"/></svg></div><strong>UI / UX Design</strong><span>Human-centered</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INDUSTRIES ============ -->
+  <section class="industries" id="industries">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">&lt;/ industries we serve&gt;</span>
+        <h2>Built for the businesses we understand.</h2>
+      </div>
+      <div class="ind-grid reveal-stagger">
+        <div class="ind-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 2 8l10 5 10-5-10-5zM2 8v8l10 5M22 8v8l-10 5M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg><h4>Education</h4><p>Student portals, result systems, and admin tools that handle real academic workloads.</p></div>
+        <div class="ind-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2v7a3 3 0 0 0 6 0V2M9 9v13M17 2v20M17 2c-2 0-3 2-3 5s1 5 3 5"/></svg><h4>Restaurants</h4><p>Menu websites, ordering pages, and simple booking systems for food businesses.</p></div>
+        <div class="ind-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9h18l-1.5 11h-15zM8 9V6a4 4 0 0 1 8 0v3"/></svg><h4>Retail</h4><p>Inventory tools and storefront websites that keep stock and sales organized.</p></div>
+        <div class="ind-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z"/><path d="M9 12h6M12 9v6"/></svg><h4>Healthcare</h4><p>Appointment and patient-record systems built with care around clinic workflows.</p></div>
+        <div class="ind-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 14a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21c0-3.3 3.6-6 8-6s8 2.7 8 6"/></svg><h4>Training Institutes</h4><p>Course catalogs, enrollment forms, and batch-tracking systems for training centers.</p></div>
+        <div class="ind-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m13 2-9 12h6l-1 8 9-12h-6z"/></svg><h4>Startups</h4><p>MVPs and product builds that move fast without accumulating technical debt.</p></div>
+        <div class="ind-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="9" width="16" height="12"/><path d="M9 9V5a3 3 0 0 1 6 0v4M9 13h.01M15 13h.01M9 17h.01M15 17h.01"/></svg><h4>Corporate</h4><p>Internal dashboards, reporting tools and websites built for established teams.</p></div>
+        <div class="ind-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg><h4>Small Businesses</h4><p>Right-sized websites and software that fit a small team's budget and pace.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED PROJECTS ============ -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">&lt;/ featured work&gt;</span>
+        <h2>A look at the kind of systems we build.</h2>
+        <p>Representative examples of our solution categories in practice — real capabilities, shown as sample builds.</p>
+      </div>
+      <div class="proj-grid reveal-stagger">
+
+        <div class="proj-card">
+          <div class="proj-media"><svg viewBox="0 0 200 130" fill="none"><rect x="6" y="6" width="188" height="118" rx="8" stroke="#E10600" stroke-width="2"/><circle cx="20" cy="20" r="3" fill="#E10600"/><rect x="20" y="36" width="160" height="14" rx="3" fill="#E10600" opacity=".25"/><rect x="20" y="58" width="70" height="50" rx="4" fill="#E10600" opacity=".15"/><rect x="98" y="58" width="82" height="22" rx="4" fill="#E10600" opacity=".15"/><rect x="98" y="86" width="82" height="22" rx="4" fill="#E10600" opacity=".15"/></svg></div>
+          <div class="proj-body">
+            <span class="proj-tag">Education</span>
+            <h3>Student Portal & Result System</h3>
+            <p>A sample concept for an institute needing a way to publish results and manage attendance online.</p>
+            <div class="proj-problem">Problem: manual result sheets and attendance registers created delays and errors every semester.</div>
+            <div class="proj-features"><span>Result publishing</span><span>Attendance tracking</span><span>Admin dashboard</span></div>
+            <div class="proj-stack"><b>Stack:</b> Python, Flask, MySQL, HTML/CSS/JS</div>
+            <a href="#contact" class="btn btn-outline btn-sm">View Approach</a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-media"><svg viewBox="0 0 200 130" fill="none"><rect x="6" y="6" width="188" height="118" rx="8" stroke="#E10600" stroke-width="2"/><rect x="20" y="20" width="55" height="90" rx="4" fill="#E10600" opacity=".15"/><rect x="84" y="20" width="96" height="42" rx="4" fill="#E10600" opacity=".15"/><rect x="84" y="70" width="96" height="18" rx="3" fill="#E10600" opacity=".25"/><rect x="84" y="94" width="60" height="16" rx="3" fill="#E10600" opacity=".25"/></svg></div>
+          <div class="proj-body">
+            <span class="proj-tag">Retail</span>
+            <h3>Inventory & Billing System</h3>
+            <p>A sample build concept for a retail shop needing accurate stock counts and faster billing.</p>
+            <div class="proj-problem">Problem: stock counts tracked on paper led to overselling and slow checkout lines.</div>
+            <div class="proj-features"><span>Stock tracking</span><span>Billing & invoices</span><span>Low-stock alerts</span></div>
+            <div class="proj-stack"><b>Stack:</b> Java, MySQL, HTML/CSS/JS</div>
+            <a href="#contact" class="btn btn-outline btn-sm">View Approach</a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-media"><svg viewBox="0 0 200 130" fill="none"><rect x="6" y="6" width="188" height="118" rx="8" stroke="#E10600" stroke-width="2"/><circle cx="100" cy="40" r="16" fill="#E10600" opacity=".2"/><rect x="30" y="70" width="140" height="12" rx="3" fill="#E10600" opacity=".25"/><rect x="30" y="88" width="100" height="12" rx="3" fill="#E10600" opacity=".18"/><rect x="30" y="106" width="70" height="10" rx="3" fill="#E10600" opacity=".12"/></svg></div>
+          <div class="proj-body">
+            <span class="proj-tag">Restaurants</span>
+            <h3>Menu & Ordering Website</h3>
+            <p>A concept build for a restaurant that wanted an online menu with a simple order-request flow.</p>
+            <div class="proj-problem">Problem: no online presence meant missed orders and no way for customers to browse the menu remotely.</div>
+            <div class="proj-features"><span>Digital menu</span><span>Order requests</span><span>Mobile-first design</span></div>
+            <div class="proj-stack"><b>Stack:</b> Flask, MongoDB, HTML/CSS/JS</div>
+            <a href="#contact" class="btn btn-outline btn-sm">View Approach</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATISTICS ============ -->
+  <section class="stats-band" id="stats">
+    <div class="container">
+      <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+        <span class="eyebrow" style="justify-content:center;">&lt;/ by the numbers&gt;</span>
+        <h2>Small team. Measurable results.</h2>
+      </div>
+      <div class="stats-grid reveal-stagger">
+        <div class="stat-item"><strong data-count="25" data-suffix="+">0</strong><span>Projects Completed</span></div>
+        <div class="stat-item"><strong data-count="20" data-suffix="+">0</strong><span>Happy Clients</span></div>
+        <div class="stat-item"><strong data-count="98" data-suffix="%">0</strong><span>Client Satisfaction</span></div>
+        <div class="stat-item"><strong data-count="24" data-suffix="/7">0</strong><span>Business Support</span></div>
+        <div class="stat-item"><strong data-count="100" data-suffix="%">0</strong><span>Fast, Direct Delivery</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">&lt;/ client feedback&gt;</span>
+        <h2>What it's like to work with us.</h2>
+      </div>
+      <!-- Sample feedback for layout — replace with real client testimonials as projects complete. -->
+      <div class="test-grid reveal-stagger">
+        <div class="test-card">
+          <div class="stars">★★★★★</div>
+          <p class="quote">"They actually listened to how our shop runs before suggesting anything. The billing system they built saves us at least an hour every day."</p>
+          <div class="test-person"><div class="test-avatar">R</div><div><strong>R. Menon</strong><span>Retail Store Owner</span></div></div>
+        </div>
+        <div class="test-card">
+          <div class="stars">★★★★★</div>
+          <p class="quote">"Our result-publishing process used to take days. Now it's a same-day process, and the team stayed available for changes after launch."</p>
+          <div class="test-person"><div class="test-avatar">S</div><div><strong>S. Iyer</strong><span>Training Institute Coordinator</span></div></div>
+        </div>
+        <div class="test-card">
+          <div class="stars">★★★★★</div>
+          <p class="quote">"Straightforward communication and a website that finally looks like the business we actually are."</p>
+          <div class="test-person"><div class="test-avatar">A</div><div><strong>A. Fernandes</strong><span>Restaurant Owner</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+        <span class="eyebrow" style="justify-content:center;">&lt;/ faq&gt;</span>
+        <h2>Common questions, answered directly.</h2>
+      </div>
+      <div class="faq-list reveal">
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How long does website development take?<span class="plus"></span></button>
+          <div class="faq-a"><p>Most business websites take 2–4 weeks depending on complexity and how quickly content and feedback are provided. We give a specific timeline after understanding your requirements.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you provide hosting?<span class="plus"></span></button>
+          <div class="faq-a"><p>We don't sell hosting directly, but we handle deployment, domain connection, and SSL setup on the hosting provider of your choice, and can recommend affordable options.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can existing websites be redesigned?<span class="plus"></span></button>
+          <div class="faq-a"><p>Yes. We regularly rebuild or modernize existing websites — improving design, speed, and mobile responsiveness while keeping the content you want to retain.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you provide website maintenance?<span class="plus"></span></button>
+          <div class="faq-a"><p>Yes. We offer ongoing maintenance plans covering content updates, bug fixes, performance checks, and backups after your site or software goes live.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can software be customized?<span class="plus"></span></button>
+          <div class="faq-a"><p>Every custom software project is built around your specific workflow from the start — it isn't a template we reskin, so customization is the default, not an add-on.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How do we begin a project?<span class="plus"></span></button>
+          <div class="faq-a"><p>Reach out through the contact form or WhatsApp with a short description of what you need. We'll follow up to understand your requirements and propose next steps.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What technologies do you use?<span class="plus"></span></button>
+          <div class="faq-a"><p>Our core stack includes HTML5, CSS3, JavaScript, Java, Python, Flask, MySQL, and MongoDB, deployed via Render or Vercel depending on the project.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How can I contact your team?<span class="plus"></span></button>
+          <div class="faq-a"><p>Use the contact form below, email us directly, or message us on WhatsApp for the fastest response.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">&lt;/ contact&gt;</span>
+        <h2>Let's talk about what you're building.</h2>
+        <p>Tell us a bit about your project and we'll get back to you with clear next steps.</p>
+      </div>
+
+      <div class="contact-grid reveal">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="field"><label for="name">Full Name</label><input type="text" id="name" name="name" required></div>
+            <div class="field"><label for="email">Email Address</label><input type="email" id="email" name="email" required></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone"></div>
+            <div class="field"><label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option>Website Development</option>
+                <option>Custom Software Development</option>
+                <option>Business Automation</option>
+                <option>Database Solutions</option>
+                <option>Deployment & Hosting Support</option>
+                <option>Website Maintenance</option>
+                <option>UI / UX Design</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+          </div>
+          <div class="field"><label for="message">Project Details</label><textarea id="message" name="message" required placeholder="Tell us a little about your business and what you need."></textarea></div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          <p class="form-note" id="formNote">We usually respond within one business day.</p>
+        </form>
+
+        <div class="contact-info">
+          <div class="info-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <div><strong>Email</strong><a href="mailto:hello@comsrinfotech.com">hello@comsrinfotech.com</a></div>
+          </div>
+          <div class="info-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .6 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.5 2.9.6a2 2 0 0 1 1.7 2z"/></svg>
+            <div><strong>Phone</strong><span>Available on request</span></div>
+          </div>
+          <div class="info-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="1.8"><path d="M20 12a8 8 0 1 1-3.6-6.7L20 4l-1.2 3.9A8 8 0 0 1 20 12z"/></svg>
+            <div><strong>WhatsApp</strong><a href="#" data-whatsapp target="_blank" rel="noopener">Chat with us instantly</a></div>
+          </div>
+          <div class="info-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            <div><strong>Business Hours</strong><span>Mon – Sat, 10:00 AM – 7:00 PM</span></div>
+          </div>
+          <div class="info-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-5.5 7-11a7 7 0 0 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <div><strong>Location</strong><span>Tamil Nadu, India (remote-friendly)</span></div>
+          </div>
+          <div class="info-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>
+            <div><strong>LinkedIn</strong><a href="#" target="_blank" rel="noopener">Com SR Infotech</a></div>
+          </div>
+          <div class="map-box">Map preview available once a business address is added</div>
+          <div class="response-promise"><strong style="color:var(--text)">Our promise:</strong> every inquiry gets a real reply from our team within one business day — no auto-generated ghosting.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-brand">
+          <img data-logo="dark" src="assets/logo-dark-256.png" alt="Com SR Infotech">
+          <img data-logo="light" src="assets/logo-light-256.png" alt="Com SR Infotech" style="display:none;">
+          <strong>Com SR Infotech</strong>
+        </div>
+        <p>A software development company building websites, custom software, and business automation for startups, institutions, and businesses that want technology that actually fits them.</p>
+        <div class="footer-social">
+          <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="#E10600" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1"/></svg></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="#E10600" stroke-width="1.6"><path d="M15 8h-2a2 2 0 0 0-2 2v2H9v3h2v7h3v-7h2.2l.8-3H14v-1.5c0-.5.2-1 1-1H16V6h-1z"/><circle cx="12" cy="12" r="9"/></svg></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="#E10600" stroke-width="1.6"><rect x="3" y="6" width="18" height="12" rx="4"/><path d="M11 10l4 2-4 2v-4z" fill="#E10600" stroke="none"/></svg></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="#E10600" stroke-width="1.6"><path d="M12 3a9 9 0 0 0-2.8 17.5c.4.1.6-.2.6-.4v-1.6c-2.5.5-3-1.1-3-1.1-.4-1-1-1.3-1-1.3-.9-.5 0-.5 0-.5 1 .1 1.5 1 1.5 1 .8 1.4 2.2 1 2.8.8.1-.6.3-1 .6-1.3-2-.2-4.1-1-4.1-4.4 0-1 .3-1.7.9-2.3-.1-.2-.4-1.1.1-2.4 0 0 .8-.2 2.6 1a9 9 0 0 1 4.8 0c1.8-1.2 2.6-1 2.6-1 .5 1.3.2 2.2.1 2.4.6.6.9 1.4.9 2.3 0 3.4-2.1 4.1-4.1 4.4.3.3.6.8.6 1.7v2.5c0 .2.2.5.6.4A9 9 0 0 0 12 3z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Solutions</h5>
+        <ul>
+          <li><a href="#solutions">Website Development</a></li>
+          <li><a href="#solutions">Custom Software</a></li>
+          <li><a href="#solutions">Business Automation</a></li>
+          <li><a href="#solutions">Database Solutions</a></li>
+          <li><a href="#solutions">UI / UX Design</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#company">Why Choose Us</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Stay Updated</h5>
+        <p style="font-size:13.5px;color:var(--muted);margin-bottom:14px;line-height:1.6;">Occasional notes on new services and case studies — no spam.</p>
+        <form class="newsletter" onsubmit="event.preventDefault(); this.reset();">
+          <input type="email" placeholder="Your email" aria-label="Email for newsletter" required>
+          <button type="submit" class="btn btn-primary btn-sm">Join</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Com SR Infotech. All rights reserved.</span>
+      <div class="legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<a class="wa-float" data-whatsapp href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="none"><path d="M16 7a9 9 0 0 0-7.8 13.6L7.2 25l4.6-1.2A9 9 0 1 0 16 7z" stroke="#fff" stroke-width="1.4"/><path d="M11.8 11.6c.3-.7.6-.7.9-.7h.7c.2 0 .5 0 .7.6l.9 2.1c.1.2.1.4 0 .6l-.6 1c-.1.2-.1.4 0 .6.4.8 1 1.6 1.8 2.2.6.5 1.2.9 1.9 1.2.2.1.4.1.6 0l.9-.9c.2-.2.4-.2.6-.1l2 1c.3.1.3.3.3.6-.1.6-.4 1.4-1 1.8-.7.5-1.5.7-2.4.5-2-.4-3.9-1.5-5.4-3-1.4-1.4-2.4-3.2-2.9-5.1-.2-.8 0-1.7.5-2.4z" fill="#fff"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
