@@ -508,6 +508,12 @@ footer{padding:80px 0 30px; position:relative;}
 .footer-brand img{width:44px; height:44px; border-radius:10px;}
 .footer-brand strong{font-family:var(--font-display); font-size:17px;}
 .footer-about p{font-size:13.5px; color:var(--muted); line-height:1.7; max-width:320px; margin-bottom:20px;}
+.follow-us{margin-top:6px;}
+.follow-us-title{display:block; margin-bottom:12px; color:var(--text); font-size:15px;}
+.follow-buttons{display:flex; flex-wrap:wrap; gap:10px;}
+.follow-btn{padding:10px 18px; font-size:13.5px;}
+.follow-btn svg{width:17px; height:17px;}
+
 .footer-social{display:flex; gap:10px;}
 .footer-social a{
   width:36px; height:36px; border:1px solid var(--border); border-radius:50%;

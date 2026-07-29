@@ -182,10 +182,8 @@
 
   /* ---------- WHATSAPP LINKS ---------- */
   const waMessage = "Hi Com SR Infotech, I'd like to discuss a project for my business.";
-  const waHref = "https://api.whatsapp.com/send?text=" + encodeURIComponent(waMessage);
+  const waHref = "https://wa.me/919344734423?text=" + encodeURIComponent(waMessage);
   document.querySelectorAll('[data-whatsapp]').forEach(a => a.href = waHref);
-  // Add a real number once available:
-  // "https://wa.me/91XXXXXXXXXX?text=" + encodeURIComponent(waMessage)
 
   /* ---------- CONTACT FORM (front-end only — no backend yet) ---------- */
   const form = document.getElementById('contactForm');
