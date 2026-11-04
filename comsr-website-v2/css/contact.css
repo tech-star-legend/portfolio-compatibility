@@ -1,0 +1,138 @@
+/* =====================================================
+   COM SR INFOTECH — DIGITAL CONTACT CARD (/contact)
+   Loaded AFTER style.css; reuses its tokens, theme
+   variables, toggle and wave overlay. Page-specific only.
+   ===================================================== */
+
+.sr-only{
+  position:absolute; width:1px; height:1px; margin:-1px; padding:0;
+  overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+}
+
+.cc-body{min-height:100vh; min-height:100dvh;}
+
+/* soft brand glow, same recipe as the homepage hero */
+.cc-glow{
+  position:fixed; inset:0; z-index:0; pointer-events:none;
+  background:
+    radial-gradient(520px 360px at 85% 6%, var(--glow), transparent 65%),
+    radial-gradient(460px 340px at 8% 96%, var(--glow), transparent 65%);
+}
+
+.cc-theme{
+  position:fixed; z-index:20;
+  top:max(16px, env(safe-area-inset-top));
+  right:max(16px, env(safe-area-inset-right));
+}
+/* larger touch target around the 46x26 toggle without changing its look */
+.cc-theme .theme-toggle{position:relative;}
+.cc-theme .theme-toggle::after{content:""; position:absolute; inset:-9px -6px;}
+
+.cc-wrap{
+  position:relative; z-index:2;
+  min-height:100vh; min-height:100dvh;
+  display:flex; align-items:center; justify-content:center;
+  padding:calc(64px + env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) calc(28px + env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+}
+
+.cc-card{
+  width:100%; max-width:440px;
+  background:var(--glass);
+  -webkit-backdrop-filter:blur(16px) saturate(140%);
+  backdrop-filter:blur(16px) saturate(140%);
+  border:1px solid var(--border);
+  border-radius:var(--radius-lg);
+  padding:34px 22px 22px;
+  box-shadow:0 30px 70px -40px var(--glow);
+  text-align:center;
+  animation:ccIn .7s var(--ease) both;
+}
+
+.cc-logo{display:flex; justify-content:center; margin-bottom:22px;}
+.cc-logo img{
+  width:96px; height:96px; border-radius:22px; object-fit:cover;
+  box-shadow:0 20px 50px -20px var(--glow);
+}
+
+/* ---------- welcome + typewriter ---------- */
+.cc-welcome{
+  font-size:clamp(23px,6.6vw,30px);
+  font-weight:600; line-height:1.25;
+  margin-bottom:26px;
+}
+.tw .tw-brand{font-weight:700; color:var(--red);}
+/* Hide the sentence until contact.js has set up the typewriter (prevents a full-sentence flash).
+   If the script never runs, ccReveal shows the sentence after 3s. Not applied for reduced motion. */
+@media (prefers-reduced-motion:no-preference){
+  html.js .tw:not(.tw-on){visibility:hidden; animation:ccReveal 0s 3s forwards;}
+}
+@keyframes ccReveal{to{visibility:visible;}}
+/* untyped remainder keeps its space (no layout jump) but is invisible */
+.tw .rest, .tw .rest .tw-brand{color:transparent;}
+/* plain inline box (not inline-block) so it adds no mid-word line-break opportunity while typing */
+.tw-cursor{position:relative;}
+.tw-cursor::after{
+  content:""; position:absolute; left:2px; top:.1em; width:2px; height:1em;
+  background:var(--red); border-radius:1px;
+  animation:ccBlink 1s steps(1) infinite;
+}
+.tw-cursor.done::after{animation:ccBlink 1s steps(1) 3, ccFade .4s ease 3s forwards;}
+@keyframes ccBlink{0%,49%{opacity:1;} 50%,100%{opacity:0;}}
+@keyframes ccFade{to{opacity:0;}}
+
+/* ---------- link buttons ---------- */
+.cc-links{display:flex; flex-direction:column; gap:12px; margin:0; padding:0;}
+.cc-links li{
+  opacity:0; transform:translateY(14px);
+  animation:ccIn .6s var(--ease) forwards;
+}
+.cc-links li:nth-child(1){animation-delay:.15s;}
+.cc-links li:nth-child(2){animation-delay:.22s;}
+.cc-links li:nth-child(3){animation-delay:.29s;}
+.cc-links li:nth-child(4){animation-delay:.36s;}
+.cc-links li:nth-child(5){animation-delay:.43s;}
+.cc-links li:nth-child(6){animation-delay:.50s;}
+
+.cc-btn{
+  display:flex; align-items:center; gap:14px;
+  min-height:60px; padding:8px 16px 8px 10px;
+  background:var(--card); border:1px solid var(--border); border-radius:var(--radius-md);
+  color:var(--text); text-align:left;
+  -webkit-tap-highlight-color:transparent;
+  transition:transform .25s var(--ease), border-color .25s, box-shadow .25s, background .25s;
+}
+.cc-btn:hover{
+  transform:translateY(-2px);
+  border-color:var(--brand);
+  background:var(--card-hover);
+  box-shadow:0 16px 30px -22px var(--brand);
+}
+.cc-btn:active{transform:translateY(0) scale(.985);}
+.cc-btn:focus-visible{outline:2px solid var(--red); outline-offset:3px; border-radius:var(--radius-md);}
+
+.cc-ico{
+  flex:0 0 44px; width:44px; height:44px; border-radius:12px;
+  display:flex; align-items:center; justify-content:center;
+  background:var(--bg-alt); border:1px solid var(--border);
+  color:var(--red);
+}
+.cc-ico svg{width:24px; height:24px; display:block;}
+
+.cc-label{flex:1; font-family:var(--font-display); font-weight:600; font-size:17px; letter-spacing:-0.01em;}
+.cc-arrow{width:18px; height:18px; color:var(--muted); transition:transform .25s var(--ease), color .25s;}
+.cc-btn:hover .cc-arrow{transform:translateX(3px); color:var(--text);}
+
+.cc-foot{margin-top:22px; font-size:12.5px; color:var(--muted); letter-spacing:.02em;}
+
+@keyframes ccIn{from{opacity:0; transform:translateY(14px);} to{opacity:1; transform:translateY(0);}}
+
+@media (min-width:480px){
+  .cc-card{padding:40px 30px 26px;}
+}
+
+@media (prefers-reduced-motion:reduce){
+  .cc-card, .cc-links li{animation:none; opacity:1; transform:none;}
+  .cc-btn, .cc-arrow{transition:none;}
+  .cc-btn:hover{transform:none;}
+  .tw-cursor{display:none;}
+}
