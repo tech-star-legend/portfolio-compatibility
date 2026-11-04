@@ -54,6 +54,10 @@ html[data-theme="light"]{
   --logo-current:url('../assets/logo-light-256.png');
 }
 
+/* Show the logo matching the active theme from first paint (main.js also toggles them) */
+html[data-theme="light"] [data-logo="dark"],
+html[data-theme="dark"] [data-logo="light"]{display:none !important;}
+
 /* ---------- RESET ---------- */
 *,*::before,*::after{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
