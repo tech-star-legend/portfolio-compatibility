@@ -1,0 +1,2 @@
+# Clean URL for the digital contact card (QR code target). Added below any existing rules.
+/contact  /contact.html  200
