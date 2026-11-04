@@ -80,12 +80,30 @@
   const wave = document.getElementById('waveOverlay');
   let animating = false;
 
+  const THEME_KEY = 'comsr-theme';   // shared by every page
   function setLogos(theme) {
     document.querySelectorAll('[data-logo="dark"]').forEach(el => el.style.display = theme === 'dark' ? 'block' : 'none');
     document.querySelectorAll('[data-logo="light"]').forEach(el => el.style.display = theme === 'dark' ? 'none' : 'block');
     if (knob) knob.textContent = theme === 'dark' ? '🌙' : '☀️';
   }
   setLogos(root.getAttribute('data-theme'));
+
+  function setTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    setLogos(theme);
+  }
+  function saveTheme(theme) {
+    try { localStorage.setItem(THEME_KEY, theme); } catch (e) {}
+  }
+  // Keep a page restored from the back/forward cache (or another tab) in step with the saved choice.
+  function syncSavedTheme() {
+    if (animating) return;
+    let saved = null;
+    try { saved = localStorage.getItem(THEME_KEY); } catch (e) {}
+    if ((saved === 'light' || saved === 'dark') && saved !== root.getAttribute('data-theme')) setTheme(saved);
+  }
+  window.addEventListener('pageshow', (e) => { if (e.persisted) syncSavedTheme(); });
+  window.addEventListener('storage', (e) => { if (e.key === THEME_KEY) syncSavedTheme(); });
 
   if (toggle) {
     toggle.addEventListener('click', () => {
@@ -94,8 +112,8 @@
       const next = current === 'dark' ? 'light' : 'dark';
 
       if (prefersReduced) {
-        root.setAttribute('data-theme', next);
-        setLogos(next);
+        setTheme(next);
+        saveTheme(next);
         return;
       }
 
@@ -104,8 +122,8 @@
       wave.classList.add('run');
 
       setTimeout(() => {
-        root.setAttribute('data-theme', next);
-        setLogos(next);
+        setTheme(next);
+        saveTheme(next);
       }, 900);
 
       setTimeout(() => {
